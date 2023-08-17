@@ -6,21 +6,21 @@
 int oPerador(char c);
 int balanceamentoDePares(char o, char close);
 int verificaBalanceamento(char exp[], int n);
-
+int a;
 
 int main() {
     char expr[MAX];
     int n;
 
-    printf("Digite a expressão: ");
+    printf("Digite a expressï¿½o: ");
     scanf("%s", expr);
     n = strlen(expr);
 
-    // Verifica se a expressão está balanceada
+    // Verifica se a expressï¿½o estï¿½ balanceada
     if (verificaBalanceamento(expr, n)) {
-        printf("A expressão está balanceada.\n");
+        printf("A expressï¿½o estï¿½ balanceada.\n");
     } else {
-        printf("A expressão não está balanceada.\n");
+        printf("A expressï¿½o nï¿½o estï¿½ balanceada.\n");
     }
 
     return 0;
@@ -35,7 +35,7 @@ int oPerador(char c) {
 
 
 int balanceamentoDePares(char open, char close) {
-	// se o caractere for um operador de abertura, será empilhado dentro da pilha	
+	// se o caractere for um operador de abertura, serï¿½ empilhado dentro da pilha	
 		// se o caractere for de fechamento, verificar se esta dentro da pilha
     return (open == '(' && close == ')') ||
            (open == '{' && close == '}') ||
