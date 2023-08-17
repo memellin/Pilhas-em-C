@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAX 100
+#define MAX 200
 
 int oPerador(char c);
 int balanceamentoDePares(char o, char close);
